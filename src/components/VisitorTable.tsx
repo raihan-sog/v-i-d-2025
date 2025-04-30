@@ -2,8 +2,19 @@
 
 import { useEffect, useState } from "react";
 
+interface Visitor {
+  id: number;
+  nama: string;
+  jabatan?: string;
+  perusahaan: string;
+  email: string;
+  nomor_hp?: string;
+  created_at: string;
+  is_sent: boolean;
+}
+
 export default function VisitorTable() {
-  const [visitors, setVisitors] = useState([]);
+  const [visitors, setVisitors] = useState<Visitor[]>([]);
   const [loading, setLoading] = useState(true);
   const [sending, setSending] = useState(false);
 
@@ -63,9 +74,9 @@ export default function VisitorTable() {
               </tr>
             </thead>
             <tbody>
-              {visitors.map((v: any, i: number) => (
+              {visitors.map((v, i) => (
                 <tr
-                  key={i}
+                  key={v.id}
                   className={`border-t text-sm ${
                     i % 2 === 0 ? "bg-white" : "bg-gray-50"
                   }`}
