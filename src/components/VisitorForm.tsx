@@ -54,7 +54,7 @@ export default function VisitorForm() {
         priority
         className="mx-auto mb-4 object-contain"
       />
-      <h1 className="text-2xl font-bold mb-6 text-center text-black">Visitor Indo-Defence 2025</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center text-black">Visitor IndoDefence 2025</h1>
 
       <input
         type="text"
