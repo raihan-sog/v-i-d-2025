@@ -13,7 +13,7 @@ export default function QRPage() {
     if (!qrRef.current) return;
     
     // Ambil elemen QR code
-    const qrContainer = qrRef.current;
+    //const qrContainer = qrRef.current;
     const svgElement = qrRef.current.querySelector("svg");
     
     if (!svgElement) return;
