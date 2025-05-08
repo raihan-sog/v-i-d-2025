@@ -54,7 +54,7 @@ export default function VisitorForm() {
         priority
         className="mx-auto mb-4 object-contain"
       />
-      <h1 className="text-2xl font-bold mb-6 text-center text-black">Indo Defence 2025</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center text-black">Visitor Indo-Defence 2025</h1>
 
       <input
         type="text"
@@ -104,6 +104,12 @@ export default function VisitorForm() {
       >
         {isSubmitting ? "Mengirim..." : "Submit"}
       </button>
+      <p className="text-center text-sm text-gray-400 mt-8">
+          HALL B BOOTH 080
+          <br />© PT. SOG Indonesia {new Date().getFullYear()}
+          <br />
+      </p>
+
     </form>
   );
 }
