@@ -23,7 +23,7 @@ export default function VisitorForm() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const res = await fetch("http://localhost:5555/api/submit", {
+      const res = await fetch("https://b-e-i-25-production.up.railway.app/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)

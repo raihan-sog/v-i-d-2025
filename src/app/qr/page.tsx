@@ -5,7 +5,7 @@ import { QRCodeSVG } from "qrcode.react";
 import NextImage from "next/image";
 
 export default function QRPage() {
-  const [url, setUrl] = useState("http://192.168.1.67:3000");
+  const [url, setUrl] = useState("https://indodefence.vercel.app/");
   const qrRef = useRef<HTMLDivElement | null>(null);
 
   // Fungsi untuk download QR code sebagai PNG

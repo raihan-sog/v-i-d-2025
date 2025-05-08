@@ -19,7 +19,7 @@ export default function VisitorTable() {
   const [sending, setSending] = useState(false);
 
   const fetchVisitors = async () => {
-    const res = await fetch("http://localhost:5555/api/visitors");
+    const res = await fetch("https://b-e-i-25-production.up.railway.app/api/visitors");
     const data = await res.json();
     setVisitors(data);
     setLoading(false);
@@ -31,7 +31,7 @@ export default function VisitorTable() {
 
   const sendRekap = async () => {
     setSending(true);
-    const res = await fetch("http://localhost:5555/api/send-rekap", {
+    const res = await fetch("https://b-e-i-25-production.up.railway.app/api/send-rekap", {
       method: "POST",
     });
 
